@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!-- Zeichenkodierung der aktuellen Datei angeben -->
+    <meta charset="UTF-8">
+
+    <!-- Seiten-Titel für das Tab bzw. für das Google Suchresultat -->
+    <title>Mein erstes HTML Dokument</title>
+
+    <!-- Kurzbeschreibung des Inhalts auf der Seite (max. 160 Zeichen) -->
+    <meta name="description"
+        content="WIFI. Wissen ist für immer: ✓ Ausbildungspartner Nr. 1 ✓ Kurse, Seminare & Lehrgänge ✓ Berufliche Fort- & Weiterbildung ➤ Jetzt mehr erfahren!">
+
+    <!-- Favicon einbinden -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <!-- Social Media Tags -->
+    <!-- Facebook (https://ogp.me/) -->
+    <meta property="og:image" content="http://localhost:5500/img/cat.jpg">
+    <meta property="og:title" content="Mein erstes HTML Dokument">
+    <meta property="og:description"
+        content="WIFI. Wissen ist für immer: ✓ Ausbildungspartner Nr. 1 ✓ Kurse, Seminare & Lehrgänge ✓ Berufliche Fort- & Weiterbildung ➤ Jetzt mehr erfahren!">
+
+    <!-- Twitter (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup) -->
+    <meta property="twitter:image" content="http://localhost:5500/img/cat.jpg">
+    <meta property="twitter:title" content="Mein erstes HTML Dokument">
+    <meta property="twitter:description"
+        content="WIFI. Wissen ist für immer: ✓ Ausbildungspartner Nr. 1 ✓ Kurse, Seminare & Lehrgänge ✓ Berufliche Fort- & Weiterbildung ➤ Jetzt mehr erfahren!">
+
+    <!-- CSS Dateien -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript Dateien -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Kopfbereich vom Dokument/Seite -->
+            Logo
+        </header>
+
+        <nav id="main-nav">
+            <!-- Navigation (nav) -->
+            <ul class="level-1">
+                <li class="nav-item active">
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Produkte</a>
+                    <ul class="level-2">
+                        <li>
+                            <a href="">Notebooks</a>
+                        </li>
+                        <li>
+                            <a href="">Smartphones</a>
+                        </li>
+                        <li>
+                            <a href="">Software</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Mitarbeiter</a>
+                </li>
+                <li>
+                    <a href="">Kontakt</a>
+                </li>
+                <li>
+                    <a href="">Impressum</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Hauptinhaltsbereich (main)-->
+            <h1>Überschrift 1</h1>
+
+            <section>
+                <h2>Content-Elemente</h2>
+                <p>wie geht's dir?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum sint cupiditate, tempore, omnis aliquam
+                    animi
+                    quod
+                    dolores odit <em>repellat adipisci</em> expedita mollitia quasi maiores rem illum, sit nulla corrupti.
+                    Mollitia?
+                </p>
+                <p>Lorem ipsum dolor, <span>sit amet consectetur</span> adipisicing elit. Molestiae eos quis aut magnam porro aliquid
+                    repellendus
+                    aspernatur officia rerum inventore. <br> Quas necessitatibus debitis asperiores perspiciatis dolore
+                    placeat
+                    facere
+                    vero mollitia?</p>
+                <p class="bold uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur veniam, perspiciatis fugiat
+                    minus
+                    fugit
+                    ad error <i>reprehenderit illum laudantium</i> nesciunt magni nulla iusto numquam ipsam. Odit nemo earum
+                    nisi!
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat corporis sequi fuga consequatur ullam
+                    blanditiis
+                    harum. Officiis laborum odio ratione ab autem illo eius porro! Accusamus similique ad consequuntur
+                    perspiciatis!
+                </p>
+
+                <div>
+                    <h2 id="numbering-headline">Nummerierungen & Aufzählungen</h2>
+                    <h3>Aufzählung (z.B. Einkaufsliste)</h3>
+                    <ul>
+                        <li class="uppercase">Bailys</li>
+                        <li class="bold">Milch</li>
+                        <li>
+                            Obst
+                            <ul>
+                                <li>Äpfel</li>
+                                <li>Ananas</li>
+                                <li>
+                                    <strong>Kiwis</strong>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>Nummerierungen (z.B. WM Gruppe C)</h3>
+                    <ol>
+                        <li>Polen</li>
+                        <li>
+                            <b>Argentinien</b>
+                        </li>
+                        <li>Saudi-Arabien</li>
+                        <li>Mexiko</li>
+                    </ol>
+                </div>
+
+                <h2>Verlinkungen</h2>
+                <h3>externer Link</h3>
+                <a href="https://www.wifi-ooe.at" target="_blank" title="WIFI OÖ Homepage">WIFI OÖ Homepage</a>
+
+                <h3>interner Link</h3>
+                <a href="kontakt.html">Kontakt</a> <a href="downloads/test.pdf" target="_blank">Test.pdf</a>
+
+                <h3>Link auf eMail-Adresse</h3>
+                <a href="mailto:max@mustermann.at">max@mustermann.at</a>
+
+                <h3>Link auf eine Telefonnummer</h3>
+                <a href="tel:+435700077">WIFI Kundenservice</a>
+
+                <h2>Bilder einbinden</h2>
+                <img src="img/cat.jpg" alt="schlafende Katze" width="250">
+
+                <h3>Bild mit Bildunterschrift</h3>
+                <figure>
+                    <img src="img/cat.jpg" alt="schlafende Katze" width="250">
+                    <figcaption>schlafende Katze</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Tabellen</h2>
+                <h3>FIFA WM 2022 - Gruppe B (Endstand)</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Spiele</th>
+                            <th>Siege</th>
+                            <th>Unentschieden</th>
+                            <th>Niederlagen</th>
+                            <th>Tore</th>
+                            <th>Punkte</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. England</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>9:2</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>2. USA</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2:1</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>3. Iran</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>4:7</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4. Wales</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>1:6</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Tabelle (technisches Datenblatt)</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Marke</th>
+                            <td>Dell</td>
+                        </tr>
+                        <tr>
+                            <th>Hersteller</th>
+                            <td>Dell Computers</td>
+                        </tr>
+                        <tr>
+                            <th>Modell/Serie</th>
+                            <td>XPS 15 9520</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Warenkorb</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Bezeichnung</th>
+                            <th>Menge</th>
+                            <th>Preis</th>
+                            <th>Gesamtpreis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>HTML kurz & gut</td>
+                            <td>1</td>
+                            <td>15,--</td>
+                            <td>15,--</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">2</td>
+                            <td>CSS kurz & gut</td>
+                            <td>2</td>
+                            <td>15,--</td>
+                            <td>30,--</td>
+                        </tr>
+                        <tr>
+                            <!-- Spalte 1 wird von darüberliegender Zeile eingenommen -->
+                            <td>CSS Referenzblatt</td>
+                            <td>2</td>
+                            <td>0,--</td>
+                            <td>0,--</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Summe</td>
+                            <td>45,--</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section>
+                <h2>Formulare</h2>
+                <h3>Suchformular</h3>
+                <form action="index.html" method="GET">
+                    <label for="suchbegriff">Suchbegriff</label>
+                    <input type="search" name="suchbegriff" id="suchbegriff" placeholder="Kurs, Kurs-Nummer,..."
+                        required>
+                    <button type="submit">Suchen</button>
+                </form>
+
+                <h3>Login-Formular</h3>
+                <form action="index.html" method="POST">
+                    <label for="email">E-Mail Adresse</label>
+                    <input type="email" name="email" id="email" required>
+                    <br>
+                    <label for="passwort">Passwort</label>
+                    <input type="password" name="passwort" id="passwort" required>
+                    <br>
+                    <button type="submit">Login</button>
+                </form>
+
+                <h3>Muli-Kulti-Formular (verschiedene Elemente)</h3>
+                <form action="index.html" method="POST" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Persönlichen Daten</legend>
+
+                        <label for="anrede">Anrede</label>
+                        <select name="anrede" id="anrede" required>
+                            <option value=""></option>
+                            <option value="f">Frau</option>
+                            <option value="m">Herr</option>
+                            <option value="o">Divers</option>
+                        </select>
+                        <br>
+                        <label for="vorname">Vorname</label>
+                        <input type="text" id="vorname" name="vorname" required>
+                        <br>
+                        <label for="nachname">Nachname</label>
+                        <input type="text" name="nachname" id="nachname" required>
+                        <br>
+                        <label for="geburtsdatum">Geburtsdatum</label>
+                        <input type="date" name="geburtsdatum" id="geburtsdatum">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Andere Input-Felder</legend>
+
+                        <!-- Radio Buttons start -->
+                        <label>Bezahlung</label><br>
+
+                        <input type="radio" name="bezahlung" id="bezahlung1" value="bar" checked required>
+                        <label for="bezahlung1">Barzahlung</label>
+
+                        <input type="radio" name="bezahlung" id="bezahlung2" value="abbucher">
+                        <label for="bezahlung2">Abbucher</label>
+
+                        <input type="radio" name="bezahlung" id="bezahlung3" value="ueberweisung">
+                        <label for="bezahlung3">Überweisung</label>
+                        <!-- Radio Buttons end -->
+
+                        <br><br>
+
+                        <!-- Check-Boxen start -->
+                        <label>Interessen</label><br>
+
+                        <input type="checkbox" name="interessen" id="interesse1" value="sport" checked required>
+                        <label for="interesse1">Sport</label>
+
+                        <input type="checkbox" name="interessen" id="interesse2" value="kultur">
+                        <label for="interesse2">Kultur</label>
+
+                        <input type="checkbox" name="interessen" id="interesse3" value="natur" checked>
+                        <label for="interesse3">Natur</label>
+                        <!-- Check-Boxen end -->
+
+                        <br><br>
+
+                        <label for="anmerkung">Anmerkung</label><br>
+                        <textarea name="anmerkung" id="anmerkung" rows="10"></textarea>
+
+                        <br><br>
+
+                        <label for="upload">Upload</label>
+                        <input type="file" name="upload" id="upload">
+
+                        <input type="hidden" name="captcha" value="xxxx">
+                    </fieldset>
+
+                    <button type="reset">Zurücksetzen</button>
+                    <button type="submit">Absenden</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>externe Inhalte einbinden</h2>
+
+                <h3>YouTube Video einbinden</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Jg3Qy5SzIt8?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <h3>Google Map einbinden</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.210530766468!2d14.306621051447301!3d48.27956544913766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477397dace1e21d1%3A0x6d860909d4323f34!2sWiener%20Str.%20150%2C%204020%20Linz!5e0!3m2!1sde!2sat!4v1670863764067!5m2!1sde!2sat"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <h3>iFrame (externe Seite) einbinden</h3>
+                <iframe src="https://sport.orf.at" width="560" height="800" frameborder="0"></iframe>
+            </section>
+
+            <section>
+                <h2>News</h2>
+                <article class="article">
+                    <h3>News-Artikel</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fugit aperiam neque provident ab illum similique autem dolores excepturi velit! Culpa accusantium repudiandae unde voluptatem dolores earum dicta placeat dolore?</p>
+                </article>
+                
+                <article class="article">
+                    <h3>News-Artikel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas fugiat est corrupti doloribus dicta harum iusto iste labore minus sit perspiciatis asperiores totam, distinctio aliquam omnis! Velit excepturi officiis unde.</p>
+                </article>
+                
+                <article class="article">
+                    <h3>News-Artikel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quae blanditiis reiciendis recusandae maiores aliquam perferendis repellendus asperiores. Sed nihil voluptate magni velit voluptas ab nisi doloribus totam qui libero.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Fußbereich vom Dokument/Seite -->
+            &copy; by Max Mustermann 2022
+        </footer>
+    </div>
+</body>
+
+</html>

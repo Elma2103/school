@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Einheiten</title>
+
+    <link rel="stylesheet" href="css/einheiten.css">
+</head>
+<body>
+    <h1>CSS-Einheiten</h1>
+    
+    <h2>Absolute Einheiten</h2>
+    <h3>Pixel (px)</h3>
+    <p>Absolut bedeutet, dass die Schriftgröße konstant bleibt, auch wenn die Basisschriftgröße verändert wird.</p>
+    <p class="px-20">20 Pixel</p>
+
+    <h2>Relative Einheite</h2>
+    <p>Relativ bedeutet, dass sich die Schrifgröße an eine bestimmte Basisgröße ausrichtet - proportional verändert</p>
+
+    <h3>EMs</h3>
+    <p>Bei den EMs bezieht sich ein Kindelement immer relativ auf sein Eleternelement.</p>
+    <p class="em-2">
+        Eleternelement (2 x Basisgröße)
+        <span class="em-2">Kindelement (4 x Basisgröße)</span>
+    </p>
+
+    <h3>REMs</h3>
+    <p>Bei den REMs bezieht sich ein Kindelement immer relativ auf die Basis-Schriftgröße</p>
+    <p class="rem-2">
+        Eleternelement (2 x Basisgröße)
+        <span class="rem-2">Kindelement (2 x Basisgröße)</span>
+    </p>
+
+    <h3>% Prozent</h3>
+    <p>z.B. die Breite eines Elements auf Basis des Elternelements</p>
+    <div class="progress width-70"></div>
+
+    <h3>vw Viewport Width</h3>
+    <p>Gibt die Größe in Bezug auf die Breite des sichtbaren Bereichs des Browser-Fenster an. Im Gegensatz zu den Prozentangaben, bezieht sich das nicht auf das Elternelement sondern immer auf die Browserbreite.</p>
+    <div class="vw-50">
+
+    </div>
+
+
+    <h3>vh Viewport Height</h3>
+    <p>Gibt die Größe in Bezug auf die Höhe des sichtbaren Bereichs des Browser-Fenster an. Im Gegensatz zu den Prozentangaben, bezieht sich das nicht auf das Elternelement sondern immer auf die Browserhöhe.</p>
+    <div class="vh-50">
+        
+    </div>
+</body>
+</html>

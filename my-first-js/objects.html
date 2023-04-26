@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekte</title>
+</head>
+<body>
+    <h1 class="headline">Objekte</h1>
+    <script>
+        function BankAccount(owner1, amount1, iban1) {
+            this.owner = owner1;
+            this.amount = amount1;
+            this.iban = iban1;
+
+            this.deposit = function(amount) {
+                this.amount = this.amount + amount;
+            }
+
+            this.withdraw = function(amount) {
+                this.amount = this.amount - amount;
+            }
+        }
+
+        let accountA = new BankAccount('Max Mustermann', 100, 'AT32...001');
+        let accountB = new BankAccount('Susi Musterfrau', 1000, 'AT32...002');
+
+        console.log(accountA, accountB);
+
+        console.log('Einzahlen von 250 Euro am Konto A');
+        accountA.deposit(250);
+        console.log(accountA);
+
+        console.log('Einzahlen von 500 Euro am Konto B');
+        accountB.deposit(500);
+        console.log(accountB);
+
+        console.log('Auszahlen von 50 Euro am Konto A');
+        accountA.withdraw(50);
+        console.log(accountA);
+
+        console.log('Auszahlen von 200 Euro am Konto B');
+        accountB.withdraw(200);
+        console.log(accountB); 
+    </script>
+</body>
+</html>

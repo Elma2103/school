@@ -1,0 +1,36 @@
+.blue {
+    background: cornflowerblue;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.odd {
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.even {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* p:nth-child(2n) { */
+p:nth-child(even) {
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* p:nth-child(2n+1) { */
+p:nth-child(odd) {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.delete-me {
+    background-color: rgba(255,0,0,0.7) !important;
+}

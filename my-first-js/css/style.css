@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+}
+
+.joker-numbers {
+    display: flex;
+    gap: 10px;
+}
+
+.joker-numbers .number {
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
+}

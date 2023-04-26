@@ -1,0 +1,35 @@
+html {
+    font-size: 16px;
+}
+
+.px-20 {
+    font-size: 20px;
+}
+
+.em-2 {
+    font-size: 2em;
+}
+
+.rem-2 {
+    font-size: 2rem;
+}
+
+.progress {
+    background-color: cornflowerblue;
+    height: 20px;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.vw-50 {
+    background-color: lightgreen;
+    height: 20px;
+    width: 50vw;
+}
+
+.vh-50 {
+    background-color: coral;
+    height: 50vh;
+}

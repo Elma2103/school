@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daten speichern</title>
+</head>
+<body>
+    <h1>Daten speichern mit localStorage und sessionStorage</h1>
+    <p>sowohl localStorage als auch sessionStorage können zu einem bestimmten Schlüsselwort (key) <strong>Inhalte in Form eines Textes</strong> speichern.</p>
+    <p>key => value (string)</p>
+
+    <h2>sessionStorage</h2>
+    <p>Einfache Möglichkeit Daten so lange zu speichern, bis das Browser-Fenster (die Session) geschlossen wird.</p>
+    <script>
+        // let name = 'Susi Musterfrau';
+        //sessionStorage.setItem('name', name);
+
+        console.log(sessionStorage.getItem('name'));
+    </script>
+
+    <h2>localStorage</h2>
+    <p>Einfache Möglichkeit Daten "dauerhaft" zu speichern, wobei dauerhaft auch bedeutet, dass die Daten über Sessions hinaus erhalten bleiben.</p>
+
+    <script>
+        // let randomNumber = Math.round(Math.random() * 100);
+        // localStorage.setItem('randomNumber', randomNumber);
+
+        console.log(localStorage.getItem('randomNumber'));
+    </script>
+
+    <h2>Beispiel: Objekt in localStorage speichern</h2>
+    <p>Die direkte Speicherung eines Objekts in der local- oder sessionStorage funktioniert nicht. Darum muss das Objekt zuerst in einen String umgewandelt werden.</p>
+    <script>
+        let person = {
+            firstName: 'Susi',
+            lastName: 'Musterfrau',
+            email: 'susi@musterfrau.at'
+        };
+
+        // Die direkte Speicherung eines Objekts in der local- oder sessionStorage funktioniert nicht.
+        // localStorage.setItem('person_susi', person);
+
+        // Umwandlung eines Objekts in einen String mittels JSON.stringify()
+        // localStorage.setItem('person_susi', JSON.stringify(person));
+
+        // Auslesen eines Objekts in einem String-Format
+        let temp = localStorage.getItem('person_susi');
+
+        // Umwandeln des Strings in ein Objekt
+        let savedPerson = JSON.parse(temp);
+
+        console.log(savedPerson.firstName);
+    </script>
+</body>
+</html>

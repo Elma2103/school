@@ -1,0 +1,26 @@
+.container {
+    background-color: blueviolet;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .item {
+    box-sizing: border-box;
+    background-color: orange;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.container .item:nth-child(2) {
+    order: 1;
+}
+
+.container #item1 {
+    order: 2;
+}

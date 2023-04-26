@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="css/game.css">
+
+    <script src="js/game.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Game</h1>
+
+        <div id="game-board">
+            <div id="click-me"></div>
+        </div>
+        
+        <div id="game-info">
+            <div id="counter">Points: 0</div>
+            <div id="remaining-seconds">Time: 15</div>
+        </div>
+        
+        <div id="game-controls">
+            <button type="button" id="start-game">Start</button>
+            <button type="button" id="reset-game" disabled>Reset</button>
+        </div>
+
+        <div id="game-history">
+            
+        </div>
+    </div>
+
+    <div class="modal">
+        <h2>Save Game</h2>
+        <form id="new-history-entry-form" action="">
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <button type="submit">Speichern</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#game-board {
+    background-color: #eeeeee;
+    height: 50vh;
+    position: relative;
+}
+
+#click-me {
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    cursor: pointer;
+    display: none;
+    left: 0;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    width: 75px;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal {
+    background-color: #fff;
+    border: 1px solid black;
+    display: none;
+    left: 25vw;
+    padding: 30px;
+    position: fixed;
+    top: 200px;
+    width: 50vw;
+    z-index: 2;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+body.show-modal::after {
+    background-color: rgba(0,0,0,0.8);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+body.show-modal .modal {
+    display: block;
+}

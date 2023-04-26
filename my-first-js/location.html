@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Objekt</title>
+</head>
+<body>
+    <h1>Location Object</h1>
+    <p>Informationen über die URL (z.B. Host, Port, Protocol, etc.) auslesen und einige andere Funktionen</p>
+    <script>
+        // Ausgeben der kompletten URL
+        console.log(location.href);
+
+        // Host/Domain inkl. Port
+        console.log(location.host);
+
+        // Doamin-Name
+        console.log(location.hostname);
+
+        // Port ausgeben
+        console.log(location.port);
+
+        // Pfad ausgeben
+        console.log(location.pathname);
+
+        // Weiterleitung auf eine bestimme Website/URL
+        setTimeout(
+            function() {
+                location.assign('https://www.wifi-ooe.at');
+                //location.href = 'https://www.wifi-ooe.at'
+            },
+            5000
+        );
+
+        // Seite neu laden
+        //location.reload();
+        
+    </script>
+</body>
+</html>

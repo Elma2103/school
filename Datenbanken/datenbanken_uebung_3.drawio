@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net" modified="2023-04-12T19:10:50.066Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="9XLpw-FHAY5PH2CgVmNw" version="21.1.7" type="device">
+  <diagram name="Seite-1" id="Ffhi72ANtr6WYJ6En_if">
+    <mxGraphModel dx="1434" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="acwP3Dairs-asPIZnvFa-5" value="n" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="acwP3Dairs-asPIZnvFa-1" target="acwP3Dairs-asPIZnvFa-2">
+          <mxGeometry x="0.75" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-10" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-5">
+          <mxGeometry x="-0.8583" y="4" relative="1" as="geometry">
+            <mxPoint x="-14" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="acwP3Dairs-asPIZnvFa-1" target="acwP3Dairs-asPIZnvFa-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-7" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-6">
+          <mxGeometry x="-0.8" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-8" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-6">
+          <mxGeometry x="0.75" y="-1" relative="1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-1" value="Schulstufe" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="acwP3Dairs-asPIZnvFa-2" target="acwP3Dairs-asPIZnvFa-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-18" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-15">
+          <mxGeometry x="-0.75" y="3" relative="1" as="geometry">
+            <mxPoint x="-5" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-19" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-15">
+          <mxGeometry x="0.7" y="-2" relative="1" as="geometry">
+            <mxPoint x="8" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-2" value="Klasse" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#FF0000;" edge="1" parent="1" source="acwP3Dairs-asPIZnvFa-3" target="acwP3Dairs-asPIZnvFa-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-12" value="m" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-11">
+          <mxGeometry x="-0.8316" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-13" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-11">
+          <mxGeometry x="0.8632" y="1" relative="1" as="geometry">
+            <mxPoint x="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="acwP3Dairs-asPIZnvFa-3" target="acwP3Dairs-asPIZnvFa-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-20" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-16">
+          <mxGeometry x="-0.8842" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-21" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-16">
+          <mxGeometry x="0.8421" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-3" value="Fach" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-4" value="Lehrer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-17" value="n" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="acwP3Dairs-asPIZnvFa-14" target="acwP3Dairs-asPIZnvFa-4">
+          <mxGeometry x="-0.75" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-22" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-17">
+          <mxGeometry x="0.6952" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-23" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="acwP3Dairs-asPIZnvFa-17">
+          <mxGeometry x="-0.6952" y="1" relative="1" as="geometry">
+            <mxPoint x="-22" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="acwP3Dairs-asPIZnvFa-14" value="Klasse_Fach_Lehrer&lt;br&gt;(Stundenplan)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

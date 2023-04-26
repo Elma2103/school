@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <h1>Responsive Design</h1>
+    <p>Darunter versteht man ein Layout/Design einer Webseite/Webanwendung, dass sich an das jeweilige Anzeigegerät anpasst.</p>
+
+    <h2>Viewport</h2>
+    <p>Der sichtbare Bereich im Browser (Content, der angezeigt wird).</p>
+
+    <h2>Breakpoint</h2>
+    <p>Punkt/Seitenbreiten ab dem sich das Design/Layout sprunghaft ändert. (z.B. anstatt 4 Spalten am Desktop, wird auf einem Smartphone nur eine Spalte angezeigt).</p>
+
+    <h2>Voraussetzungen</h2>
+    <ol>
+        <li>
+            Viewport-Meta-Tag im Head<br>
+            <pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre>
+        </li>
+        <li>
+            Media-Queries im CSS<br>
+<pre>
+h1 {
+    font-size: 3.5rem;
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+</pre>
+        </li>
+    </ol>
+
+    <h2>Beispiele</h2>
+    <h3>Mehre Spalten neben einander anzeigen</h3>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <h3>Elemente je nach Gerätetyp (-breite) ein- oder ausblenden</h3>
+    <p class="example visible-desktop">Absatz für Desktopgerät</p>
+    <p class="example visible-mobile">Absatz für Mobilgerät</p>
+</body>
+</html>

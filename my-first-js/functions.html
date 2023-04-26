@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funktionen</title>
+</head>
+<body>
+    <h1>Funktionen</h1>
+    
+    <h2>Beispiel formatierte Ausgabe</h2>
+    <p>Funktion zur formatierten Ausgabe von HTML Texten.</p>
+    <script>
+        // Deklaration/Definition der Funktion
+        function writeLine(text, elem = 'p', className = '') {
+            if (elem == null || elem == '') {
+                elem = 'p';
+            }
+            document.write(`<${elem} class="${className}">${text}</${elem}>`);
+        }
+
+        // Aufruf der Funktion -> die Funktion wird ausgeführt
+        writeLine('hallo', 'h2');
+        writeLine('zeile2', 'h3', 'blue');
+        writeLine('zeilex', '', 'test');
+    </script>
+
+    <h2>Beispiel: Funktion zum Generieren eines Arrays mit x Zufallszahlen von (1-100)</h2>
+    <script>
+        // Deklaration/Definition der Funktion
+        function randomNumbers(cntItems = 10) {
+            let numbers = [];
+
+            for (let i = 0; i < cntItems; i++) {
+                numbers.push(Math.floor(Math.random() * 100) + 1);
+            }
+
+            return numbers;
+        }
+
+        // Deklaration/Definition der Funktion
+        function randomNumbersUnique(cntItems = 10, minValue = 1, maxValue = 100, unique = false) {
+            let numbers = [];
+            let randomNumber;
+
+            while (numbers.length < cntItems) {
+                randomNumber = minValue + (Math.round(Math.random() * (maxValue - minValue)));
+                
+                if (unique) {
+                    if (!inArray(randomNumber, numbers)) {
+                        numbers.push(randomNumber);    
+                    }
+                } else {
+                    numbers.push(randomNumber);
+                }    
+            }
+
+            return numbers;
+        }
+
+        // Aufruf der Funktion -> die Funktion wird ausgeführt
+        let randNums = randomNumbers(5);
+
+        console.log(randNums);
+    </script>
+
+    <h2>Beispiel: Funktion die prüft, ob ein Wert in einem Array enthalten ist</h2>
+    <p>Rückgabewert ist entweder true, wenn der Wert enthalten ist oder false, wenn der Wert nicht enthalten ist.</p>
+    <script>
+
+        function inArray(needle, haystack) {
+            for (let elem of haystack) {
+                if (needle === elem) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+    </script>
+
+    <h2>Beispiel: Lottozahlen - 6 aus (1-45)</h2>
+    <script>
+        /**
+         * Compare Funktion von zwei Zahlen A und B
+         *   - A > B   =>  positive Zahl > 0 zurückgegeben
+         *   - B > A   =>  negative Zahl < 0 zurückgegeben
+         *   - A == B  =>  0 zurückgegeben
+         **/
+        function compareNumbersA(numberA, numberB) {
+            if (numberA > numberB) {
+                return 1;
+            } else if (numberB > numberA) {
+                return -1;
+            } else {
+                return 0;
+            }
+        }
+
+        function compareNumbersB(numberA, numberB) {
+            return numberA-numberB;
+        }
+
+        let lottoNumbers = randomNumbersUnique(6, 1, 12, true);
+
+        lottoNumbers.sort(compareNumbersB);
+
+        console.log(lottoNumbers);
+    </script>
+
+    <h2>Beispiel: Anzahl der Zeichen in einem Array zählen</h2>
+    <p>
+        Ausgangssituation: Array mit 100 zufälligen Elementen (1-100)<br>
+        Gesucht: Wie oft kommt die Zahl 22 vor?
+    </p>
+    <script>
+        function countAppearances(needle, haystack) {
+            let times = 0;
+
+            for (let number of haystack) {
+                if (number == needle) {
+                    times++;
+                }
+            }
+
+            return times;
+        }
+
+        numbers = randomNumbersUnique(10, 1, 5);
+        
+        let findNumber = 2;
+        let numberOfAppearances = countAppearances(findNumber, numbers);
+        console.log(numbers);
+        console.log(numberOfAppearances);
+    </script>
+
+    <h2>Call by Reference vs. call by Value</h2>
+
+    <script>
+        function replaceEverySecondElement(elements, replaceElement) {
+            for (let i = 0; i < elements.length; i = i + 2) {
+                elements[i] = replaceElement;
+            }
+        }
+
+        numbers = randomNumbers(10);
+        console.log(numbers);
+
+        replaceEverySecondElement(numbers, -2);
+
+        console.log(numbers);
+
+
+        function swap(numberA, numberB) {
+            let tmp = numberA;
+            numberA = numberB;
+            numberB = tmp;
+        }
+
+        let num1 = 22;
+        let num2 = 11;
+
+        console.log(num1);
+        console.log(num2);
+
+        swap(num1, num2);
+
+        console.log(num1);
+        console.log(num2);
+
+
+        function addCities(austrianCities) {
+            austrianCities.push('Klagenfurt');
+            austrianCities.push('Salzburg');
+        }
+
+        let cities = ['Linz', 'Graz', 'Wien'];
+
+        console.log(cities);
+
+        addCities(cities);
+
+        console.log(cities);
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeitfunktionen in JavaScript</title>
+
+    <link rel="stylesheet" href="css/time.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zeitfunktionen in JavaScript</h1>
+        <h2>Zugriff auf die aktuelle Zeit</h2>
+        <p>Achtung: in JavaScript beginnt die Monatsangabe als integer mit 0 nicht mit 1 -> Jänner ist Monat 0</p>
+        <p><a href="https://www.w3schools.com/jsref/jsref_obj_date.asp">JavaScript Date Object Reference</a></p>
+        <script>
+            // Aktuelle Zeit vom Browser
+            // let time = new Date();
+
+            // bestimmter Zeitpunkt
+            // let time = new Date("2023-01-02");
+            //let time = new Date(2023, 0, 2, 0, 0, 0);
+
+            let time = new Date();
+            console.log(time);
+            console.log(time.toLocaleDateString());
+            console.log(time.toLocaleTimeString());
+            console.log(time.getDay());
+            console.log(time.toJSON());
+
+            // Aufgabe: 30 Tage zum aktuellen Zeitpunkt hinzufügen:
+            let timeInMillis = time.getTime();
+            console.log(timeInMillis);
+
+            timeInMillis += 30 * 24 * 60 * 60 * 1000;
+
+            time.setTime(timeInMillis);
+            console.log(time.toLocaleString());
+        </script>
+
+        <h2>Arbeiten mit moment.js</h2>
+        <p>Einbinden von moment.js (<a href="https://github.com/moment/moment">https://github.com/moment/moment</a>)</p>
+        <pre>&lt;script src="js/moment-with-locales.min.js"&gt;&lt;/script&gt;</pre>
+        <script src="js/moment-with-locales.min.js"></script>
+
+        <script>
+            let now = moment();
+            console.log(now);
+
+            // 30 Tage zum aktuellen Zeitpunkt hinzufügen
+            now.add(30, 'days');
+            console.log(now.format('DD.MM.YYYY'));
+
+            let firstTimeStamp = moment('15.12.2022', 'DD.MM.YYYY');
+            let secondTimeStamp = moment('17.01.2023', 'DD.MM.YYYY');
+            let diff = moment.duration(secondTimeStamp.diff(firstTimeStamp));
+            console.log(diff.asSeconds());
+        </script>
+
+        <h2>Zeitsteuerung</h2>
+        <h3>setTimeout - Aktion nach einer bestimmten Zeit einmal ausführen</h3>
+        <script>
+            let timeout = setTimeout(
+                function() {
+                    let elem = document.createElement('div');
+                    elem.setAttribute('id', 'hallo');
+                    elem.innerText = 'Hallo';
+                    document.getElementsByClassName('container')[0].appendChild(elem);
+                },
+                500
+            );
+
+            let timeout2 = setTimeout(
+                function() {
+                    let elem = document.getElementById('hallo');
+                    elem.style.color = 'cornflowerblue';
+                },
+                4000
+            );
+
+            // Timeout löschen - zuvor definiertes Timeout wird gelöscht (also Funktion nicht ausgeführt)
+            clearTimeout(timeout2);
+        </script>
+
+        <h3>setInterval - Aktion in einem bestimmten Zeitinterval immer wieder ausführen</h3>
+        <script>
+            let count = 0;
+            
+            let interval1 = setInterval(
+                function() {
+                    count++;
+                    let elem = document.createElement('div');
+                    elem.setAttribute('class', 'hallo');
+                    elem.innerText = 'Hallo it\'s me - Mario! ' + count;
+                    document.getElementsByClassName('container')[0].appendChild(elem);
+                },
+                1000
+            );
+
+            setTimeout(
+                function() {
+                    clearInterval(interval1);
+                },
+                9000
+            )
+        </script>
+    </div>
+
+    <script src="js/time.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" modified="2023-04-12T19:10:38.787Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="mLNK9xfTie0ZYTUPte9P" version="21.1.7" type="device">
+  <diagram name="Seite-1" id="TWp_5vhUaTihHVgHI_tu">
+    <mxGraphModel dx="1674" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-8" value="n" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="OCgPoqL9tRLP-kEL_aEg-1" target="OCgPoqL9tRLP-kEL_aEg-3">
+          <mxGeometry x="-0.9" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-10" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-8">
+          <mxGeometry x="-0.37" y="2" relative="1" as="geometry">
+            <mxPoint x="82" y="-33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="OCgPoqL9tRLP-kEL_aEg-1" target="OCgPoqL9tRLP-kEL_aEg-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-12" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-11">
+          <mxGeometry x="-0.912" y="-3" relative="1" as="geometry">
+            <mxPoint x="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-13" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-11">
+          <mxGeometry x="0.888" y="-4" relative="1" as="geometry">
+            <mxPoint x="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;strokeColor=#FF2200;" edge="1" parent="1" source="OCgPoqL9tRLP-kEL_aEg-1" target="OCgPoqL9tRLP-kEL_aEg-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-15" value="m" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-14">
+          <mxGeometry x="-0.8083" y="3" relative="1" as="geometry">
+            <mxPoint x="7" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-16" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-14">
+          <mxGeometry x="0.8417" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#63FF14;" edge="1" parent="1" source="OCgPoqL9tRLP-kEL_aEg-1" target="OCgPoqL9tRLP-kEL_aEg-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-20" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-18">
+          <mxGeometry x="-0.5923" y="-3" relative="1" as="geometry">
+            <mxPoint x="-33" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-21" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-18">
+          <mxGeometry x="0.7615" y="-3" relative="1" as="geometry">
+            <mxPoint x="-7" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-1" value="Film" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-6" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" edge="1" parent="1" source="OCgPoqL9tRLP-kEL_aEg-2" target="OCgPoqL9tRLP-kEL_aEg-1">
+          <mxGeometry x="-0.913" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-7" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-6">
+          <mxGeometry x="0.4" relative="1" as="geometry">
+            <mxPoint x="14" y="35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-2" value="Sprache" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-3" value="Genre" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#63FF14;" edge="1" parent="1" source="OCgPoqL9tRLP-kEL_aEg-4" target="OCgPoqL9tRLP-kEL_aEg-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-22" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-19">
+          <mxGeometry x="-0.8286" y="1" relative="1" as="geometry">
+            <mxPoint x="-8" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-23" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OCgPoqL9tRLP-kEL_aEg-19">
+          <mxGeometry x="0.8762" y="-1" relative="1" as="geometry">
+            <mxPoint x="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-4" value="Schauspieler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-5" value="Regisseur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OCgPoqL9tRLP-kEL_aEg-17" value="Film_Schauspieler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

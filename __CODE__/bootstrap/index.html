@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Beispiel-Seite</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-1"><i class="fa-brands fa-github"></i> Bootstrap Beispiel-Seite</h1>
+
+        <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem a aliquam animi. Aperiam, harum sit
+            veniam consequatur modi id ex eos eius tempora dolorem illo debitis, quidem alias voluptatum beatae? Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Nulla hic non sunt quasi quaerat suscipit provident optio
+            debitis, iste eius fugiat quidem aspernatur ad modi ea eos ex? Aliquam, ut?
+        </p>
+
+        <figure class="text-end">
+            <blockquote class="blockquote">
+                <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+        </figure>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">1. Spalte
+                <div class="row">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">2. Spalte</div>
+            <div class="col-sm-6 col-md-4 col-lg-3">3. Spalte</div>
+            <div class="col-sm-6 col-md-4 col-lg-3">4. Spalte</div>
+        </div>
+
+        <img src="https://via.placeholder.com/1200x320.png/ff0000/ffffff?text=hi+wie+gehts" alt="Beispiel Bild"
+            class="img-fluid">
+
+        <div style="width: 150px; height: 150px">
+            <img src="https://via.placeholder.com/1200x320.png/ff0000/ffffff?text=hi+wie+geht" alt=""
+                style="width: 150px; height: 150px" class="object-fit-contain">
+        </div>
+
+        <h2><i class="fa-solid fa-house"></i> Tabellen</h2>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>
+                            <i class="fa-solid fa-pencil"></i>
+                            <i class="fa-solid fa-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>
+                            <i class="fa-solid fa-pencil"></i>
+                            <i class="fa-solid fa-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                        <td>
+                            <i class="fa-solid fa-pencil"></i>
+                            <i class="fa-solid fa-trash text-danger"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="bg-warning p-3 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                class="bi bi-exclamation-diamond" viewBox="0 0 16 16">
+                <path
+                    d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
+                <path
+                    d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+            </svg>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias assumenda asperiores consequatur
+            cupiditate suscipit deleniti, nostrum recusandae excepturi libero incidunt? Doloribus minima dolorum culpa
+            asperiores necessitatibus quasi ea ducimus fuga?
+        </p>
+
+        <h2>Formulare</h2>
+        <div class="row">
+            <form action="" class="col-sm-4">
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-Mail</label>
+                    <input type="email" name="email" id="email" class="form-control is-invalid">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Passwort</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label">Your vanity URL</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                        <input type="text" class="form-control" id="basic-url">
+                    </div>
+                    <div class="form-text">Example help text goes outside the input group.</div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+
+                <a href="#" class="btn btn-outline-secondary">Abbrechen</a>
+                <button type="submit" class="btn btn-outline-primary">Login</button>
+            </form>
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+            A simple primary alert—check it out!
+        </div>
+
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+
+        <h2>Accordion</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Accordion Item #4
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Slider</h2>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555"
+                            dy=".3em">First slide</text>
+                    </svg>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555"
+                            dy=".3em">Seconds slide</text>
+                    </svg>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555"
+                            dy=".3em">Third slide</text>
+                    </svg>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h2>Modal</h2>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Bootstrap Modal</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        .......
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

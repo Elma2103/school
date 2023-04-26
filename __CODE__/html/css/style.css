@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Passions Conflict';
+    src: url('../fonts/PassionsConflict-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('../fonts/IndieFlower-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h3 {
+    color: rgb(6, 65, 175)
+}
+
+h2 {
+    color: rgb(70, 70, 245);
+}
+h3 {
+    color: green;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Indie Flower', cursive;
+}
+
+p {
+    line-height: 1.5;
+}
+
+#numbering-headline {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+[target="_blank"] {
+    color: green;
+}
+
+a {
+    color:green;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: darkolivegreen;
+}
+
+input:focus {
+    border: 5px solid yellow;
+}
+
+#main-nav {
+    background-color: #390;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#main-nav ul.level-1 {
+    display: flex;
+}
+
+#main-nav ul.level-2 {
+    background-color: #390;
+    display: none;
+    position: absolute;
+}
+
+#main-nav ul.level-1 > li {
+    position: relative;
+}
+
+#main-nav li:hover ul.level-2 {
+    display: block;
+}
+
+#main-nav a {
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+p.bold + p {
+    color: blue;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

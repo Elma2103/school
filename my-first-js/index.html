@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <h2>Variablen</h2>
+    <!-- JavaScript Code direkt einbinden -->
+    <script>
+        // Definition der Variable "name"
+        let name;
+        console.log(name);
+
+        // Zuweisung -> der Variable "name" wird der Inhalt "Max" zugewiesen
+        name = 'Max';
+        console.log(name);
+
+        name = 'Susi';
+        console.log(name);
+
+        let number1 = 123;
+        let number2 = 234;
+    </script>
+
+    <h2>Konstanten</h2>
+    <p>Wie Variablen, aber es kann nur eine Wertzuweisung erfolgen.</p>
+    <script>
+        const mwst = 0.2;
+    </script>
+
+    <h2>Datentypen</h2>
+    <ul>
+        <li>Number: Zahlen</li>
+        <li>String: Texte (Zeichenfolgen)</li>
+        <li>boolean: Wahrheitswert der entweder true oder false sein kann</li>
+        <li>BigInt: Führ große Zahlen, wo Number nicht mehr ausreicht</li>
+        <li>Undefined: Jener Wert, den eine Variable bei der Definition bekommt</li>
+        <li>Null: Standardobjekt-Leerobjekt</li>
+        <li>Symbol: Um z.B. auf Eigenschaften von Objekten zugreifen zu können</li>
+        <li>Objekte</li>
+        <li>Arrays</li>
+    </ul>
+
+    <h2>Operatoren</h2>
+    <p>Darunter versteht man die Operationen (z.B. Addition, Subtraktion,...), die man mit den verschiedenen Datentypen machen kann.</p>
+    
+    <h3>Datentyp Number</h3>
+    <script>
+        number1 = 10;
+        number2 = 20;
+
+        let result = number1 + number2;
+        console.log(result);
+
+        let number3 = 5;
+        result = number1 * number3 + number2;
+        console.log(result);
+
+        result = number1 * (number3 + number2);
+        console.log(result);
+
+        // Exponentialfunktion: **
+        result = number3 ** 2;
+        console.log(result);
+
+        // Modulo-Operator: % (Rest der Division z.B. 9 / 2 = 4 + 1 Rest)
+        result = 9 % 2;
+        console.log(result);
+
+        // Postinkrement
+        number3++;  // number3 = number3 + 1;
+
+        // Preinkrement
+        ++number3;  // number3 = number3 + 1;
+
+        number3 = 5;
+        result = number1 + number3++;
+        console.log(result, number3);
+
+        number3 = 5;
+        result = number1 + ++number3;
+        console.log(result, number3);
+    </script>
+
+    <h3>Strings</h3>
+    <script>
+        let firstName = 'Max';
+        let lastName = 'Müller';
+
+        // Texte verketten mit dem "+"-Operator
+        name = firstName + ' ' + lastName;
+        console.log(name);
+
+        let fullName = `Hallo ${firstName} ${lastName}!`;
+        console.log(fullName);
+
+        console.log('Hallo ${firstName} ${lastName}!');
+        console.log("Hallo ${firstName} ${lastName}!");
+        console.log(`Hallo ${firstName} ${lastName}!`);
+    </script>
+
+    <h3>Boolsche Werte</h3>
+    <script>
+        let isValid = false;
+        let isEmpty = true;
+        let isRequired = true;
+        
+        // Not-Operator mit !
+        console.log('isEmpty: ', isEmpty);
+        console.log('!isEmpty: ', !isEmpty);
+
+        // logische Operatoren && bzw. || 
+        isValid = (!isEmpty && isRequired);
+        // isValid = !true && true
+        // isValid = false && true
+        // isValid = false && true
+        // isValid = false
+        console.log('isValid: ', isValid);
+
+        isValid = !isRequired;
+        console.log('isValid: ', !isRequired);
+    </script>
+
+    <h2>Kontrollstrukturen</h2>
+    <script>
+        let randomNumber = Math.random();
+
+        // Bedingung überprüfen
+        if (randomNumber >= 0.5) {
+            // Code der ausgeführt wird, wenn die Bedingung zutrifft
+            console.log('Ich gewinne!', randomNumber);
+        } else {
+            // Code der ausgeführt wird, wenn die Bedingung nicht zutrifft
+            console.log('Computer gewinnt!', randomNumber);
+        }
+
+        let diesNumber = Math.floor(Math.random() * 6) + 1;
+        console.log(diesNumber);
+
+        let winner;
+        if (diesNumber == 1) {
+            winner = 'Daniela';
+        } else if (diesNumber == 2) {
+            winner = 'Stefan';
+        } else if (diesNumber == 3) {
+            winner = 'Elma';
+        } else if (diesNumber == 4) {
+            winner = 'Martin';
+        } else if (diesNumber == 5) {
+            winner = 'Thomas';
+        } else {
+            winner = 'Sanel';
+        }
+        console.log(`And the winner is...: ${winner}`);
+
+        switch (diesNumber) {
+            case 1:
+                winner = 'Daniela';
+                break;
+            case 2:
+                winner = 'Stefan';
+                break;
+            case 3:
+                winner = 'Elma';
+                break;
+            case 4:
+                winner = 'Martin';
+                break;
+            case 5:
+                winner = 'Thomas';
+                break;
+            default:
+                winner = 'Sanel';
+        }
+        console.log(`And the winner is...: ${winner}`);
+    </script>
+
+    <h3>Schleifen</h3>
+    <p>Ziel: Code mehrfach ausführen, bis eine bestimmte Bedingung nicht mehr zutrifft.</p>
+
+    <h4>Zählschleifen - for</h4>
+    <p>Zählschleifen verwendet man meist dann, wenn man weiß, wie oft (genaue Anzahl) man einen bestimmten Code wiederholen möchte.</p>
+    <script>
+        //for (Initialisierung ; Bedingung ; Reinitialisierung) {
+        for (let i = 1 ; i <= 10 ; i = i + 2) {
+            // Code der mehrfach ausgeführt werden soll
+            console.log('Laufvariable i: ', i);
+        }
+    </script>
+
+    <h5>Beispiel: Joker-Zahlen</h5>
+    <p>6 zufällige Zahlen zwischen 0 und 9</p>
+    <div class="joker-numbers">
+        <script>
+            // Schleife für 6 Zahlen (Code 6 mal wiederholen)
+            for (let i = 1; i <= 6; i++) {
+                randomNumber = Math.floor( Math.random() * 10);
+                document.write(`<div class="number">${randomNumber}</div>`);
+            }
+        </script>
+    </div>
+
+    <h5>Beispiel: Primzahl</h5>
+    <p>Ist eine x-beliebige Zahl eine Primzahl?</p>
+    <script>
+        number = 123413;
+        let isPrime = true;
+
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                // wenn diese Bedingung zutrifft, dann haben wir eine Zahl zwischen 1 und number gefunden, die ein Teiler ist => d.h. die Zahl ist keine Primzahl
+                isPrime = false;
+
+                // Schleife abbrechen
+                break;                
+            }
+        }
+
+        if (isPrime) {
+            console.log(`${number} ist eine Primzahl!`);
+        } else {
+            console.log(`${number} ist keine Primzahl!`);
+        }
+    </script>
+
+    <h4>while-Schleife</h4>
+    <p>Eine Schleife, die solange läuft bis die Bedingung nicht mehr erfüllt ist -> typischerweise kennt man die Anzahl der Durchläufte nicht!</p>
+
+    <h5>Beispiel</h5>
+    <p>Der Browser soll so oft eine Zufallszahl (zwischen 1 und 100) generieren, bis er die Zahl 77 zufällig generiert hat. Gesucht ist die Anzahl der Versuche bis die 77 generiert wird.</p>
+    <script>
+        const targetNumber = 77;
+        randomNumber = 0;
+        let counter = 0;
+
+        // Solange die zufällige Zahl nicht gleich der "Zielzahl" 77 ist.
+        while (randomNumber != targetNumber) {
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+            counter++;
+        }
+
+        document.write(`<p>Es wurde ${counter} Zufallszahlen generiert bis die Zahl ${targetNumber} generiert wurde!</p>`);
+    </script>
+
+    <h4>do-while Schleife</h4>
+    <p>Ist eine fußgesteuerte Schleife, d.h. es werden zuerst alle Anweisungen in der Schleife ausgeführt bevor die Bedignung überprüft wird.</p>
+    <script>
+        randomNumber = 0;
+        counter = 0;
+
+        do {
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+            counter++;
+        } while (randomNumber != targetNumber);
+
+        document.write(`<p>Es wurde ${counter} Zufallszahlen generiert bis die Zahl ${targetNumber} generiert wurde!</p>`);
+    </script>
+
+    <h5>Beisliel: Zahen raten</h5>
+    <p>Der Browser generiert eine Zufallszahl (1 - 10) und der Benutzer darf sie erraten.</p>
+
+    <script>
+        // randomNumber = Math.floor(Math.random() * 10) + 1;
+        // counter = 0;
+        // let guessedNumber;
+
+        // do {
+        //     guessedNumber = prompt('Raten sie eine zufälle Zahl zwischen 1 und 10:');
+        //     counter++;
+        // } while (guessedNumber != randomNumber);
+
+        // document.write(`<p>Sie haben ${counter} Versuche benötigt um die Zahl ${randomNumber} zu erraten.</p>`);
+    </script>
+
+    <h2>Arrays</h2>
+    <p>Möglichkeit mehrere Werte in eine Variable abzuspeichern</p>
+    <script>
+        let numbers = [7, 5, 3, 9, 4];
+        let cities = ['Linz', 'Graz', 'Salzburg', 'Innsbruck'];
+
+        // Zugriff auf eine Element im Array
+        console.log('Cities an der Pos/Index 2:', cities[2]);
+
+        // Änder eines Wertes
+        cities[2] = 'Wels';
+
+        console.log(cities);
+
+        // Hinzufügen eines Wertes (am Ende des Arrays)
+        cities.push('Amstetten');
+        cities.push('Klagenfurt');
+
+        // cities.length gibt die aktuelle Anzahl der Elemente im Array zurück
+        cities[cities.length] = 'Bregenz';
+        
+        console.log(cities);
+
+        // Letztes Array-Element löschen
+        cities.pop();
+
+        // Array-Element an einer bliebigen Stelle löschen
+        cities.splice(0, 2)
+
+        console.log(cities);
+    </script>
+
+    <h3>Beispiel: Lotto Zahlen (6 aus 45 -> 6 Zahlen zwischen 1 und 45, wobei keine Zahl doppelt vorkommen darf)</h3>
+    <script>
+        let lottoNumbers = [];
+
+        for (let i = 0; i < 6; i++) {
+            randomNumber = Math.floor(Math.random() * 45) + 1;
+            lottoNumbers.push(randomNumber);
+        }
+
+        console.log(lottoNumbers);
+    </script>
+
+    <p>
+        Lösungsvariante: zwei Arrays - eines mit allen Zahlen und eines wo die zufällig ausgewählten hinzugefügt werden. <br>
+        Wird eine Zahl zufällig ausgewählt, wird sie im ursprünglichen Array entfernt und im neuen hinzugefügt.
+    </p>
+    <script>
+        lottoNumbers = [];
+        let allNumbers = [];
+
+        for (let i = 0; i < 45; i++) {
+            allNumbers.push(i + 1);
+        }
+
+        for (let i = 0; i < 6; i++) {
+            // zufälligen Index zwischen 0 - 44* generieren   =>  *: beim ersten Durchlauf 44, beim zweiten 43, usw.
+            let randomIndex = Math.floor(Math.random() * allNumbers.length);
+
+            // hinzufügen des Elements in die lottoZahlen
+            lottoNumbers.push(allNumbers[randomIndex]);
+
+            // Element aus allNumbers raus löschen
+            allNumbers.splice(randomIndex, 1);
+        }
+
+        // Elemente sortieren (Selection Sort)
+        for (let i = 0; i < lottoNumbers.length - 1; i++) {
+            for (let j = i + 1; j < lottoNumbers.length; j++) {
+                // wenn Element an der Stelle i größer ist, als das Element an der Stelle j, dann sollen diese Elemente getauscht werden
+                if (lottoNumbers[i] > lottoNumbers[j]) {
+                    let temp = lottoNumbers[i];
+                    lottoNumbers[i] = lottoNumbers[j];
+                    lottoNumbers[j] = temp;
+                } 
+            }
+        }
+
+        console.log(lottoNumbers);
+    </script>
+
+    <div class="joker-numbers">
+        <script>
+            for (let i = 0; i < lottoNumbers.length; i++) {
+                document.write(`<div class="number">${lottoNumbers[i]}</div>`);
+            }
+        </script>
+    </div>
+
+    <p>
+        Lösungsvariante: es wird so lange eine Zufallszahl generiert und eingefügt, bis 6 Zahlen im Array sind.<br>
+        Wichtig: vor dem Einfügen werden die bisherigen Element geprüft, ob sie nicht mit der zufällig generierten übereinstimmen.
+    </p>
+    <script>
+        lottoNumbers = [];
+
+        while (lottoNumbers.length < 6) {
+            randomNumber = Math.floor(Math.random() * 45) + 1;
+
+            // Überprüfen der bisher hinzugefügten Zahlen
+            let randomNumberExists = false;
+            for (let i = 0; i < lottoNumbers.length; i++) {
+                if (lottoNumbers[i] == randomNumber) {
+                    randomNumberExists = true;
+                    break;
+                }
+            }
+
+            if (!randomNumberExists) {
+                lottoNumbers.push(randomNumber);
+            }
+        }
+
+        console.log('lv2: ', lottoNumbers);
+
+        lottoNumbers.sort(function(a, b){return a - b});
+
+        console.log('lv2 (sort): ', lottoNumbers);
+
+    </script>
+
+    <div class="joker-numbers">
+        <script>
+            for (let i = 0; i < lottoNumbers.length; i++) {
+                document.write(`<div class="number">${lottoNumbers[i]}</div>`);
+            }
+        </script>
+    </div>
+
+    <h3>Beispiel: Summe von Zufallszahlen</h3>
+    <ul>
+        <li>Erstellung eines Arrays mit 10 Zufallszahlen (1-100)</li>
+        <li>Summe der Elemente im Array berechnen</li>
+        <li>Ausgabe des Arrays sowie der Summe (über console.log())</li>
+    </ul>
+    <script>
+        // numbers soll ein leeres Array sein
+        numbers = [];
+
+        // befüllen des Array numbers mit 10 zufälligen Zahlen zwischen 1-100
+        for (let i = 0; i < 10; i++) {
+            // Zufallszahl berechnen
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+            
+            // Zufallszahl am Ende des Arrays einfügen
+            numbers.push(randomNumber);
+        }
+
+        // Summe berechnen, indem über alle Elemente gelaufen wird
+        let sum = 0;
+        for (let i = 0; i < numbers.length; i++) {
+            sum = sum + numbers[i];
+        }
+
+        // Ausgabe
+        console.log(numbers);
+        console.log(sum);
+    </script>
+
+    <h3>Beispiel: in Array suchen</h3>
+    <ul>
+        <li>Array mit 10 Zufallszahl zwischen (1-100)</li>
+        <li>Benutzer soll eine Zahl eingeben</li>
+        <li>Suche, ob die vom Benutzer eingegebene Zahl im Array enthalten ist</li>
+        <li>Ausgabe: Array und ob die gesuchte Zahl im Array enthalten ist</li>
+    </ul>
+    <script>
+        const maxElements = 10;
+        numbers = [];
+
+        // Array mit Zufallszahlen befüllen
+        for (let i = 0; i < maxElements; i++) {
+            numbers.push(Math.floor(Math.random() * 100) + 1);
+        }
+
+        let numberFound = false;
+        let userInput = 5; //parseInt(prompt("Geben Sie bitte eine Zahl ein die gesucht werden soll"));
+
+        // for (let i = 0; i < numbers.length; i++) {
+        //     if (numbers[i] == userInput) {
+        //         numberFound = true;
+        //         break;
+        //     }
+        // }
+
+        for (let number of numbers) {
+            if (number == userInput) {
+                numberFound = true;
+                break;
+            }
+        }
+
+        console.log(numbers);
+
+        if (numberFound) {
+            console.log(`Die Zahl ${userInput} ist in numbers enthalten!`);
+        } else {
+            console.log(`Die Zahl ${userInput} ist nicht in numbers enthalten!`);
+        }
+    </script>
+
+    <script>
+        let missions = [
+            [1, 'Workout', false],
+            [2, 'WIFI JS lernen', true],
+            [3, 'Harvester zusammmen bauen', true]
+        ];
+
+        document.write(`
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Bezeichnung</th>
+                        <th>Erledigt</th>
+                    </tr>
+                </thead>
+                <tbody>`);
+
+        for (let mission of missions) {
+            document.write(`
+                <tr>
+                    <td>${mission[0]}</td>
+                    <td>${mission[1]}</td>
+                    <td><input type="checkbox" value="1" ${mission[2] ? 'checked' : ''}></td>
+                </tr>
+            `)
+        }
+
+        console.log(missions[0][1]);
+
+        document.write(`</tbody></table>`);
+    </script>
+
+    <script>
+        let countries = ['Austria', 'Germany', 'Italy', 'France', 'Spain'];
+        console.log(countries[2]);
+
+        let primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23];
+        console.log(primeNumbers);
+
+        // am Ende des Array einfügen:
+        primeNumbers.push(29);
+        primeNumbers.push(31);
+
+        // ein bestehendes Element ändern
+        primeNumbers[0] = 11;
+
+        console.log(primeNumbers);
+
+        // ein Element löschen (das letzte Element löschen)
+        primeNumbers.pop();
+
+        console.log(primeNumbers);
+
+        // zwei beliebige Elemente ab einem bestimmten Index (4) löschen
+        primeNumbers.splice(4, 2);
+
+        console.log(primeNumbers);
+    </script>
+
+    <h3>Beispiel: Maximum aus einem Array mit 10 zufälligen Zahlen (1-100) ermitteln</h3>
+    <script>
+        // numbers wird ein leeres Array zugewiesen
+        numbers = [];
+        randomNumber = 0;
+
+        // Auffüllen des numbers-Arrays mit 10 zufälligen Zahlen
+        for (let i = 1; i <= 10; i++) {
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+            numbers.push(randomNumber);
+        }
+
+        console.log(numbers);
+
+        // Maximum in Array suchen
+        // numbers.length gibt die Anzahl der Elemente zurück (in diesem Fall 10)
+
+        // Variante 1: Speichern des maximums in einer Variable und durchlaufen und vergleich mit anderen Elementen
+        let max = numbers[0];
+
+        for (let i = 1; i < numbers.length; i++) {
+            if (max < numbers[i]) {
+                max = numbers[i];
+            }
+        }
+        console.log('Maximum: ', max);
+
+        // Variante 2: Aufsteigend sortieren des Arrays und letztes Element (Index: numbers.length - 1) ausgeben
+        numbers.sort(function (a, b) { return a-b; });
+        console.log(numbers);
+        console.log('Maximum: ', numbers[9]);
+    </script>
+
+
+    <h3>Beispiel: Minimum aus einem Array mit 10 zufälligen Zahlen (1-100) ermitteln</h3>
+    <script>
+        // numbers wird ein leeres Array zugewiesen
+        numbers = [];
+        randomNumber = 0;
+
+        // Auffüllen des numbers-Arrays mit 10 zufälligen Zahlen
+        for (let i = 1; i <= 10; i++) {
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+            numbers.push(randomNumber);
+        }
+
+        console.log(numbers);
+
+        let min = numbers[0];
+
+        for (let i = 1; i < numbers.length; i++) {
+            if (min > numbers[i]) {
+                min = numbers[i];
+            }
+        }
+
+        console.log('Minimum: ', min);
+    </script>
+
+    <h3>Beispiel: Durchschnitt aus einem Array mit 10 zufälligen Zahlen (1-100) ermitteln</h3>
+    <script>
+        // numbers wird ein leeres Array zugewiesen
+        numbers = [];
+        randomNumber = 0;
+        sum = 0;
+        let avg = 0;
+
+        // Auffüllen des numbers-Arrays mit 10 zufälligen Zahlen
+        for (let i = 1; i <= 10; i++) {
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+            numbers.push(randomNumber);
+        }
+
+        console.log(numbers);
+
+        // Durchschnitt: Summe aller Elemente durch die Anzahl
+        for (let number of numbers) {
+            sum += number; // sum = sum + number;
+        }
+
+        avg = sum / numbers.length;
+
+        console.log('SUM: ', sum);
+        console.log('AVG: ', avg);
+    </script>
+
+    <script>
+        // auch Texte können wie ein Array durchlaufen werden
+        let text = "Hallo, wie geht's";
+
+        for (let i = 0; i < text.length; i++) {
+            console.log(text[i]);
+        }
+    </script>
+
+    <h2>Objekte</h2>
+    <script>
+        // let personMax = ['Max', 'Mustermann', 'max@mustermann.at', '2000-01-02'];
+        // let personSusi = ['Mustermann', 'Susi', 'max@mustermann.at', '2000-01-02'];
+
+        // eine Variante ein Objekt anzulegen
+        let personMax = {
+            firstName: 'Max',
+            lastName: 'Mustermann',
+            email: 'max@mustermann.at',
+            birthdate: '2000-01-02'
+        };
+
+        console.log(personMax.email);
+
+        // email im Objekt ändern:
+        personMax.email = 'max.mustermann@gmail.com';
+
+        console.log(personMax.email);
+
+        let personSusi = {
+            firstName: 'Susi',
+            lastName: 'Musterfrau',
+            email: 'susi@musterfrau.at',
+            birthdate: '2000-02-02'
+        };
+
+        console.log(personSusi.email);
+    </script>
+
+    <h2>Funktionen</h2>
+    <p>Mehrere Anweisungen an einer zentralen Stelle definieren und dann an verschiedenen Stellen aufrufen können</p>
+    <script>
+        // 1. Funktion definieren
+        function generateRandomNumberArray(arrayElements, minValue, maxValue) {
+            let randomNumber = 0;
+            let numbers = [];
+
+            for (let i = 1; i <= arrayElements; i++) {
+                randomNumber = Math.floor(Math.random() * (maxValue - minValue)) + minValue;
+                numbers.push(randomNumber);
+            }
+
+            return numbers;
+        }
+
+        console.log('call generateRandomNumberArray');
+
+        // 2. Funktion aufrufen
+        let myRandomNumberArray = generateRandomNumberArray(10, 50, 100);
+        console.log(myRandomNumberArray);
+
+        console.log('call generateRandomNumberArray');
+        myRandomNumberArray = generateRandomNumberArray(5, 1, 50);
+        console.log(myRandomNumberArray);
+    </script>
+
+    <h3>Maximums-Berechnung mit Funktionen</h3>
+    <script>
+        // Funktion findMaxInArray definieren
+        function findMaxInArray(elements) {
+            let max = elements[0];
+
+            for (let element of elements) {
+                if (max < element) {
+                    max = element;
+                }
+            }
+
+            return max;
+        }
+
+        console.log(console);
+
+        numbers = [];
+        
+        // Array mit Zufallszahlen (10 Elemente zwischen 1-20)
+        numbers = generateRandomNumberArray(10, 1, 20);
+        
+        max = findMaxInArray(numbers);
+        
+        console.log(numbers);
+        console.log('Maximum: ', max);
+    </script>
+
+    <h2 id="test">Test</h2>
+    <script>
+        let elem = document.getElementById('test');
+        elem.style.backgroundColor = 'cornflowerblue';
+        elem.classList.add('blue');
+        elem.innerText = 'Test-Überschrift';
+        console.log(elem);
+    </script>
+
+    <!-- JavaScript Code über externe Datei einbinden -->
+    <script src="js/script.js"></script>
+</body>
+</html>
